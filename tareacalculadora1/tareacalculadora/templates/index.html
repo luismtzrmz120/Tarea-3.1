@@ -1,0 +1,20 @@
+<html>
+    <head>
+        {% load static %}
+        <link href="{% static 'estilos.css' %}", rel="stylesheet"/>
+    </head>
+
+    <body>
+        <h1>3.1 Tarea Creación de calculadora de fracciones</h1>
+        <h2>EndPoints</h2>
+        <h2>URL /suma</h2>
+        <h2>URL /resta</h2>
+        <h2>URL /multiplicacion</h2>
+        <h2>URL /division</h2>
+        <form action="proceso" method="POST">
+            {% csrf_token %}
+            <input type="text" name="nombre"/>
+            <input type="submit"/>
+        </form>
+    </body>
+</html>
